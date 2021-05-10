@@ -15,6 +15,7 @@ public class BYGCompostables {
 
         //Leaves
         compostibleBlocks(0.3f, BYGItems.ASPEN_LEAVES);
+        compostibleBlocks(0.3f, BYGItems.ARAUCARIA_LEAVES);
         compostibleBlocks(0.3f, BYGItems.BAOBAB_LEAVES);
         compostibleBlocks(0.3f, BYGItems.BLOOMING_WITCH_HAZEL_LEAVES);
         compostibleBlocks(0.3f, BYGItems.BLUE_ENCHANTED_LEAVES);
@@ -27,6 +28,7 @@ public class BYGCompostables {
         compostibleBlocks(0.3f, BYGItems.FIR_LEAVES);
         compostibleBlocks(0.3f, BYGItems.FLOWERING_ORCHARD_LEAVES);
         compostibleBlocks(0.3f, BYGItems.FLOWERING_PALO_VERDE_LEAVES);
+        compostibleBlocks(0.3f, BYGItems.FLOWERING_NIGHTSHADE_LEAVES);
         compostibleBlocks(0.3f, BYGItems.GREEN_ENCHANTED_LEAVES);
         compostibleBlocks(0.3f, BYGItems.HOLLY_BERRY_LEAVES);
         compostibleBlocks(0.3f, BYGItems.HOLLY_LEAVES);
@@ -62,8 +64,20 @@ public class BYGCompostables {
         compostibleBlocks(0.3f, BYGItems.NIGHTSHADE_LEAVES);
         compostibleBlocks(0.3f, BYGItems.LAMENT_LEAVES);
         compostibleBlocks(0.3f, BYGItems.WITHERING_OAK_LEAVES);
+        compostibleBlocks(0.3f, BYGItems.RED_OAK_LEAVES);
+        compostibleBlocks(0.3f, BYGItems.JOSHUA_LEAVES);
+        compostibleBlocks(0.3f, BYGItems.RIPE_JOSHUA_LEAVES);
+        compostibleBlocks(0.3f, BYGItems.ZELKOVA_LEAVES);
+        compostibleBlocks(0.3f, BYGItems.MAPLE_LEAVES);
+        compostibleBlocks(0.3f, BYGItems.BLUE_PETAL);
+        compostibleBlocks(0.3f, BYGItems.PURPLE_PETAL);
+        compostibleBlocks(0.3f, BYGItems.LIGHT_BLUE_PETAL);
+        compostibleBlocks(0.3f, BYGItems.RED_PETAL);
+        compostibleBlocks(0.3f, BYGItems.WHITE_PETAL);
+        compostibleBlocks(0.3f, BYGItems.YELLOW_PETAL);
 
         //Saplings
+        compostibleBlocks(0.3f, BYGItems.ARAUCARIA_SAPLING);
         compostibleBlocks(0.3f, BYGItems.ASPEN_SAPLING);
         compostibleBlocks(0.3f, BYGItems.BAOBAB_SAPLING);
         compostibleBlocks(0.3f, BYGItems.BLUE_ENCHANTED_SAPLING);
@@ -96,6 +110,7 @@ public class BYGCompostables {
         compostibleBlocks(0.3f, BYGItems.RED_MAPLE_SAPLING);
         compostibleBlocks(0.3f, BYGItems.RED_OAK_SAPLING);
         compostibleBlocks(0.3f, BYGItems.SILVER_MAPLE_SAPLING);
+        compostibleBlocks(0.3f, BYGItems.MAPLE_SAPLING);
         compostibleBlocks(0.3f, BYGItems.SKYRIS_SAPLING);
         compostibleBlocks(0.3f, BYGItems.WHITE_CHERRY_SAPLING);
         compostibleBlocks(0.3f, BYGItems.WILLOW_SAPLING);
@@ -108,7 +123,8 @@ public class BYGCompostables {
         compostibleBlocks(0.3f, BYGItems.ETHER_SAPLING);
         compostibleBlocks(0.3f, BYGItems.NIGHTSHADE_SAPLING);
         compostibleBlocks(0.3f, BYGItems.LAMENT_SAPLING);
-        compostibleBlocks(0.3f, BYGItems.WITHERING_OAK_SAPLING);
+        compostibleBlocks(0.3f, BYGItems.JOSHUA_SAPLING);
+        compostibleBlocks(0.3f, BYGItems.ZELKOVA_SAPLING);
 
         //Flowers
         compostibleBlocks(0.65f, BYGItems.ALLIUM_FLOWER_BUSH);
@@ -216,11 +232,13 @@ public class BYGCompostables {
         compostibleBlocks(0.65f, BYGItems.BAOBAB_FRUIT);
         compostibleBlocks(0.65f, BYGItems.BULBIS_ODDITY);
         compostibleBlocks(0.65f, BYGItems.PURPLE_BULBIS_ODDITY);
+        compostibleBlocks(0.65f, BYGItems.JOSHUA_FRUIT);
+        compostibleBlocks(0.65f, BYGItems.COOKED_JOSHUA_FRUIT);
 
         //Plants
-        compostibleBlocks(0.65f, BYGItems.FLOWER_PATCH);
-        compostibleBlocks(0.65f, BYGItems.CLOVER_PATCH);
-        compostibleBlocks(0.65f, BYGItems.LEAF_PILE);
+        compostibleBlocks(0.35f, BYGItems.FLOWER_PATCH);
+        compostibleBlocks(0.35f, BYGItems.CLOVER_PATCH);
+        compostibleBlocks(0.45f, BYGItems.LEAF_PILE);
         compostibleBlocks(0.65f, BYGItems.SYTHIAN_STALK_BLOCK);
         compostibleBlocks(0.65f, BYGItems.CATTAIL);
         compostibleBlocks(0.65f, BYGItems.REEDS);
@@ -233,6 +251,68 @@ public class BYGCompostables {
         compostibleBlocks(0.65f, BYGItems.TINY_LILYPADS);
         compostibleBlocks(0.65f, BYGItems.ENDER_LILY);
         compostibleBlocks(0.65f, BYGItems.EMBUR_LILY);
+        compostibleBlocks(0.75f, BYGItems.TALL_PRAIRIE_GRASS);
+        compostibleBlocks(0.35f, BYGItems.WATER_SILK);
+        compostibleBlocks(0.65f, BYGItems.WINTER_GRASS);
+        compostibleBlocks(0.65f, BYGItems.WEED_GRASS);
+        compostibleBlocks(0.65f, BYGItems.WILTED_GRASS);
+        compostibleBlocks(0.35f, BYGItems.SHORT_BEACH_GRASS);
+        compostibleBlocks(0.65f, BYGItems.BEACH_GRASS);
+        compostibleBlocks(0.65f, BYGItems.WILTED_GRASS);
+
+        compostibleBlocks(0.65f, BYGItems.REED_THATCH);
+        compostibleBlocks(0.7f, BYGItems.REED_THATCH_STAIRS);
+        compostibleBlocks(0.35f, BYGItems.REED_THATCH_SLAB);
+        compostibleBlocks(0.15f, BYGItems.REED_THATCH_CARPET);
+        compostibleBlocks(0.25f, BYGItems.VERMILION_SCULK_TENDRILS);
+        compostibleBlocks(0.35f, BYGItems.NIGHTSHADE_SPROUTS);
+        compostibleBlocks(0.75f, BYGItems.NIGHTSHADE_ROOTS);
+        compostibleBlocks(0.65f, BYGItems.ETHER_GRASS);
+        compostibleBlocks(0.85f, BYGItems.TALL_ETHER_GRASS);
+        compostibleBlocks(0.65f, BYGItems.ETHER_FOLIAGE);
+        compostibleBlocks(0.65f, BYGItems.ETHER_BUSH);
+        compostibleBlocks(0.65f, BYGItems.ETHER_BULBS);
+        compostibleBlocks(0.35f, BYGItems.BULBIS_SPROUTS);
+        compostibleBlocks(0.65f, BYGItems.IVIS_ROOTS);
+        compostibleBlocks(0.65f, BYGItems.IVIS_SPROUT);
+        compostibleBlocks(0.65f, BYGItems.EMBUR_ROOTS);
+        compostibleBlocks(0.85f, BYGItems.TALL_EMBUR_ROOTS);
+        compostibleBlocks(0.35f, BYGItems.EMBUR_SPROUTS);
+        compostibleBlocks(0.35f, BYGItems.SYTHIAN_SPROUT);
+        compostibleBlocks(0.35f, BYGItems.LAMENT_SPROUTS);
+        compostibleBlocks(0.35f, BYGItems.SYTHIAN_ROOTS);
+        compostibleBlocks(0.65f, BYGItems.HANGING_SYTHIAN_ROOTS);
+        compostibleBlocks(0.65f, BYGItems.NETHER_BRISTLE);
+        compostibleBlocks(0.65f, BYGItems.WEEPING_ROOTS);
+        compostibleBlocks(0.35f, BYGItems.SOUL_SHROOM_SPORE_END);
+        compostibleBlocks(0.1f, BYGItems.SCORCHED_GRASS);
+        compostibleBlocks(0.1f, BYGItems.SCORCHED_BUSH);
+        compostibleBlocks(0.65f, BYGItems.WHALING_GRASS);
+        compostibleBlocks(0.75f, BYGItems.WARPED_CACTUS);
+        compostibleBlocks(0.65f, BYGItems.WARPED_BUSH);
+        compostibleBlocks(0.85f, BYGItems.TALL_CRIMSON_ROOTS);
+        compostibleBlocks(0.8f, BYGItems.YELLOW_GLOWSHROOM_STEM);
+        compostibleBlocks(0.8f, BYGItems.RED_GLOWSHROOM_STEM);
+        compostibleBlocks(0.8f, BYGItems.BLUE_GLOWSHROOM_BLOCK);
+        compostibleBlocks(0.8f, BYGItems.PURPLE_GLOWSHROOM_BLOCK);
+        compostibleBlocks(0.5f, BYGItems.BLUE_GLOWSHROOM);
+        compostibleBlocks(0.5f, BYGItems.PURPLE_GLOWSHROOM);
+        compostibleBlocks(0.4f, BYGItems.BLUE_GLOWCANE);
+        compostibleBlocks(0.4f, BYGItems.PINK_GLOWCANE);
+        compostibleBlocks(0.4f, BYGItems.PURPLE_GLOWCANE);
+        compostibleBlocks(0.1f, BYGItems.BLUE_GLOWCANE_DUST);
+        compostibleBlocks(0.1f, BYGItems.PINK_GLOWCANE_DUST);
+        compostibleBlocks(0.1f, BYGItems.PURPLE_GLOWCANE_DUST);
+        compostibleBlocks(0.8f, BYGItems.BLUE_GLOWCANE_BLOCK);
+        compostibleBlocks(0.8f, BYGItems.PINK_GLOWCANE_BLOCK);
+        compostibleBlocks(0.8f, BYGItems.PURPLE_GLOWCANE_BLOCK);
+        compostibleBlocks(0.2f, BYGItems.EMBUR_GEL_BALL);
+        compostibleBlocks(0.6f, BYGItems.EMBUR_GEL_BLOCK);
+        compostibleBlocks(0.65f, BYGItems.PINK_CHERRY_FOLIAGE);
+        compostibleBlocks(0.65f, BYGItems.WHITE_CHERRY_FOLIAGE);
+        compostibleBlocks(0.65f, BYGItems.BULBIS_ANOMALY);
+        compostibleBlocks(0.65f, BYGItems.PURPLE_BULBIS_ANOMALY);
+        compostibleBlocks(0.6f, BYGItems.PLANT_STEM);
 
         BYG.LOGGER.info("BYG: Compostible Blocks Added!");
     }
