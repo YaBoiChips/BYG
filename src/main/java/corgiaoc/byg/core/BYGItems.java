@@ -8,6 +8,7 @@ import corgiaoc.byg.common.properties.items.itemtiers.BYGArmorTiers;
 import corgiaoc.byg.common.properties.items.itemtiers.BYGItemTiers;
 import corgiaoc.byg.common.properties.items.itemtiers.BYGWaterSilkItem;
 import corgiaoc.byg.common.properties.items.itemtiers.LigniteItem;
+import net.minecraft.block.Block;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.*;
 import net.minecraft.potion.EffectInstance;
@@ -1187,6 +1188,20 @@ public class BYGItems {
     public static final Item YELLOW_DAFFODIL = createItem(new BlockItem(BYGBlocks.YELLOW_DAFFODIL, new Item.Properties().tab(BYGCreativeTab.creativeTab)), Registry.BLOCK.getKey(BYGBlocks.YELLOW_DAFFODIL));
     public static final Item YELLOW_TULIP = createItem(new BlockItem(BYGBlocks.YELLOW_TULIP, new Item.Properties().tab(BYGCreativeTab.creativeTab)), Registry.BLOCK.getKey(BYGBlocks.YELLOW_TULIP));
 
+    public static final Item TRAVERTINE = createItem(new BlockItem(BYGBlocks.TRAVERTINE, new Item.Properties().tab(BYGCreativeTab.creativeTab)), Registry.BLOCK.getKey(BYGBlocks.TRAVERTINE));
+    public static final Item TRAVERTINE_SLAB = createItem(new BlockItem(BYGBlocks.TRAVERTINE_SLAB, new Item.Properties().tab(BYGCreativeTab.creativeTab)), Registry.BLOCK.getKey(BYGBlocks.TRAVERTINE_SLAB));
+    public static final Item TRAVERTINE_STAIRS = createItem(new BlockItem(BYGBlocks.TRAVERTINE_STAIRS, new Item.Properties().tab(BYGCreativeTab.creativeTab)), Registry.BLOCK.getKey(BYGBlocks.TRAVERTINE_STAIRS));
+    public static final Item TRAVERTINE_WALL = createItem(new BlockItem(BYGBlocks.TRAVERTINE_WALL, new Item.Properties().tab(BYGCreativeTab.creativeTab)), Registry.BLOCK.getKey(BYGBlocks.TRAVERTINE_WALL));
+    public static final Item POLISHED_TRAVERTINE = createItem(new BlockItem(BYGBlocks.POLISHED_TRAVERTINE, new Item.Properties().tab(BYGCreativeTab.creativeTab)), Registry.BLOCK.getKey(BYGBlocks.POLISHED_TRAVERTINE));
+    public static final Item POLISHED_TRAVERTINE_SLAB = createItem(new BlockItem(BYGBlocks.POLISHED_TRAVERTINE_SLAB, new Item.Properties().tab(BYGCreativeTab.creativeTab)), Registry.BLOCK.getKey(BYGBlocks.POLISHED_TRAVERTINE_SLAB));
+    public static final Item POLISHED_TRAVERTINE_STAIRS = createItem(new BlockItem(BYGBlocks.POLISHED_TRAVERTINE_STAIRS, new Item.Properties().tab(BYGCreativeTab.creativeTab)), Registry.BLOCK.getKey(BYGBlocks.POLISHED_TRAVERTINE_STAIRS));
+    public static final Item POLISHED_TRAVERTINE_WALL = createItem(new BlockItem(BYGBlocks.POLISHED_TRAVERTINE_WALL, new Item.Properties().tab(BYGCreativeTab.creativeTab)), Registry.BLOCK.getKey(BYGBlocks.POLISHED_TRAVERTINE_WALL));
+    public static final Item CHISELED_TRAVERTINE = createItem(new BlockItem(BYGBlocks.CHISELED_TRAVERTINE, new Item.Properties().tab(BYGCreativeTab.creativeTab)), Registry.BLOCK.getKey(BYGBlocks.CHISELED_TRAVERTINE));
+    public static final Item CHISELED_TRAVERTINE_SLAB = createItem(new BlockItem(BYGBlocks.CHISELED_TRAVERTINE_SLAB, new Item.Properties().tab(BYGCreativeTab.creativeTab)), Registry.BLOCK.getKey(BYGBlocks.CHISELED_TRAVERTINE_SLAB));
+    public static final Item CHISELED_TRAVERTINE_STAIRS = createItem(new BlockItem(BYGBlocks.CHISELED_TRAVERTINE_STAIRS, new Item.Properties().tab(BYGCreativeTab.creativeTab)), Registry.BLOCK.getKey(BYGBlocks.CHISELED_TRAVERTINE_STAIRS));
+    public static final Item CHISELED_TRAVERTINE_WALL = createItem(new BlockItem(BYGBlocks.CHISELED_TRAVERTINE_WALL, new Item.Properties().tab(BYGCreativeTab.creativeTab)), Registry.BLOCK.getKey(BYGBlocks.CHISELED_TRAVERTINE_WALL));
+
+
     public static Item createItem(Item item, ResourceLocation id) {
         if (id != null && !id.equals(new ResourceLocation("minecraft:air"))) {
 //            Registry.register(Registry.ITEM, id, item);
@@ -1196,6 +1211,10 @@ public class BYGItems {
         } else {
             return null;
         }
+    }
+
+    public static Item createBlockItem(Block block, Item.Properties props) {
+        return createItem(new BlockItem(block, props), Registry.BLOCK.getKey(block));
     }
 
     public static Item createItem(Item item, String id) {

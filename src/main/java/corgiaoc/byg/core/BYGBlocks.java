@@ -1073,6 +1073,19 @@ public class BYGBlocks {
     public static final Block BULBIS_PHYCELIUM = createEndStoneSpreadable(Blocks.END_STONE, MaterialColor.TERRACOTTA_WHITE, BYGConfiguredFeatures.SpreadableBlockConfigs.BULBIS_CONFIG, "bulbis_phycelium");
     public static final Block IMPARIUS_PHYLIUM = createEndStoneSpreadable(Blocks.END_STONE, MaterialColor.COLOR_CYAN, BYGConfiguredFeatures.SpreadableBlockConfigs.BULBIS_CONFIG, "imparius_phylium");
 
+    public static final Block TRAVERTINE = createTravertine("travertine");
+    public static final Block TRAVERTINE_SLAB = createTravertineSlab("travertine_slab");
+    public static final Block TRAVERTINE_STAIRS = createTravertineStairs("travertine_stairs");
+    public static final Block TRAVERTINE_WALL = createTravertineWall("travertine_wall");
+    public static final Block POLISHED_TRAVERTINE = createPolishedTravertine("polished_travertine");
+    public static final Block POLISHED_TRAVERTINE_SLAB = createPolishedTravertineSlab("polished_travertine_slab");
+    public static final Block POLISHED_TRAVERTINE_STAIRS = createPolishedTravertineStairs("polished_travertine_stairs");
+    public static final Block POLISHED_TRAVERTINE_WALL = createPolishedTravertineWall("polished_travertine_wall");
+    public static final Block CHISELED_TRAVERTINE = createChiseledTravertine("chiseled_travertine");
+    public static final Block CHISELED_TRAVERTINE_STAIRS = createChiseledTravertineStairs("chiseled_travertine_stairs");
+    public static final Block CHISELED_TRAVERTINE_SLAB = createChiseledTravertineSlab("chiseled_travertine_slab");
+    public static final Block CHISELED_TRAVERTINE_WALL = createChiseledTravertineWall("chiseled_travertine_wall");
+
     static Block createScoriaStoneSlab(String id) {
         Block createBlock = new SlabBlock(AbstractBlock.Properties.of(Material.STONE, MaterialColor.TERRACOTTA_RED).sound(SoundType.STONE).strength(2.0f, 6.0f).harvestTool(ToolType.PICKAXE).requiresCorrectToolForDrops());
         createBlock(createBlock, id);
@@ -1775,6 +1788,90 @@ public class BYGBlocks {
     static Block createDesertPlant(String id, ITag.INamedTag<Block> groundTag) {
         Block createBlock = new DesertPlant(AbstractBlock.Properties.of(Material.PLANT).sound(SoundType.GRASS).strength(0.0f).noCollission().noOcclusion(), groundTag);
         createPottedBlock(createBlock, id);
+        createBlock(createBlock, id);
+        return createBlock;
+    }
+
+    static Block createTravertine(String id){
+        Block createBlock = new Block(AbstractBlock.Properties.of(Material.STONE, MaterialColor.TERRACOTTA_WHITE)
+                .sound(SoundType.STONE).strength(2.0f, 6.0f).harvestTool(ToolType.PICKAXE).requiresCorrectToolForDrops());
+        createBlock(createBlock, id);
+        return createBlock;
+    }
+
+    static Block createTravertineSlab(String id) {
+        Block createBlock = new SlabBlock(AbstractBlock.Properties.of(Material.STONE, MaterialColor.TERRACOTTA_WHITE)
+                .sound(SoundType.STONE).strength(2.0f, 6.0f).harvestTool(ToolType.PICKAXE).requiresCorrectToolForDrops());
+        createBlock(createBlock, id);
+        return createBlock;
+    }
+
+    static Block createTravertineStairs(String id) {
+        Block createBlock = new StairsBlock(Blocks.ANDESITE_STAIRS.defaultBlockState(),AbstractBlock.Properties.of(Material.STONE, MaterialColor.TERRACOTTA_WHITE)
+                .sound(SoundType.STONE).strength(2.0f, 6.0f).harvestTool(ToolType.PICKAXE).requiresCorrectToolForDrops());
+        createBlock(createBlock, id);
+        return createBlock;
+    }
+
+    static Block createTravertineWall(String id) {
+        Block createBlock = new WallBlock(AbstractBlock.Properties.of(Material.STONE, MaterialColor.TERRACOTTA_RED)
+                .sound(SoundType.STONE).strength(2.0f, 6.0f).harvestTool(ToolType.PICKAXE).requiresCorrectToolForDrops());
+        createBlock(createBlock, id);
+        return createBlock;
+    }
+
+    static Block createPolishedTravertine(String id){
+        Block createBlock = new Block(AbstractBlock.Properties.of(Material.STONE, MaterialColor.TERRACOTTA_WHITE)
+                .sound(SoundType.STONE).strength(2.0f, 6.0f).harvestTool(ToolType.PICKAXE).requiresCorrectToolForDrops());
+        createBlock(createBlock, id);
+        return createBlock;
+    }
+
+    static Block createPolishedTravertineSlab(String id) {
+        Block createBlock = new SlabBlock(AbstractBlock.Properties.of(Material.STONE, MaterialColor.TERRACOTTA_WHITE)
+                .sound(SoundType.STONE).strength(2.0f, 6.0f).harvestTool(ToolType.PICKAXE).requiresCorrectToolForDrops());
+        createBlock(createBlock, id);
+        return createBlock;
+    }
+
+    static Block createPolishedTravertineStairs(String id) {
+        Block createBlock = new StairsBlock(Blocks.POLISHED_ANDESITE.defaultBlockState(),AbstractBlock.Properties.of(Material.STONE, MaterialColor.TERRACOTTA_WHITE)
+                .sound(SoundType.STONE).strength(2.0f, 6.0f).harvestTool(ToolType.PICKAXE).requiresCorrectToolForDrops());
+        createBlock(createBlock, id);
+        return createBlock;
+    }
+
+    static Block createPolishedTravertineWall(String id) {
+        Block createBlock = new WallBlock(AbstractBlock.Properties.of(Material.STONE, MaterialColor.TERRACOTTA_RED)
+                .sound(SoundType.STONE).strength(2.0f, 6.0f).harvestTool(ToolType.PICKAXE).requiresCorrectToolForDrops());
+        createBlock(createBlock, id);
+        return createBlock;
+    }
+
+    static Block createChiseledTravertine(String id){
+        Block createBlock = new Block(AbstractBlock.Properties.of(Material.STONE, MaterialColor.TERRACOTTA_WHITE)
+                .sound(SoundType.STONE).strength(2.0f, 6.0f).harvestTool(ToolType.PICKAXE).requiresCorrectToolForDrops());
+        createBlock(createBlock, id);
+        return createBlock;
+    }
+
+    static Block createChiseledTravertineSlab(String id) {
+        Block createBlock = new SlabBlock(AbstractBlock.Properties.of(Material.STONE, MaterialColor.TERRACOTTA_WHITE)
+                .sound(SoundType.STONE).strength(2.0f, 6.0f).harvestTool(ToolType.PICKAXE).requiresCorrectToolForDrops());
+        createBlock(createBlock, id);
+        return createBlock;
+    }
+
+    static Block createChiseledTravertineStairs(String id) {
+        Block createBlock = new StairsBlock(Blocks.POLISHED_ANDESITE.defaultBlockState(),AbstractBlock.Properties.of(Material.STONE, MaterialColor.TERRACOTTA_WHITE)
+                .sound(SoundType.STONE).strength(2.0f, 6.0f).harvestTool(ToolType.PICKAXE).requiresCorrectToolForDrops());
+        createBlock(createBlock, id);
+        return createBlock;
+    }
+
+    static Block createChiseledTravertineWall(String id) {
+        Block createBlock = new WallBlock(AbstractBlock.Properties.of(Material.STONE, MaterialColor.TERRACOTTA_RED)
+                .sound(SoundType.STONE).strength(2.0f, 6.0f).harvestTool(ToolType.PICKAXE).requiresCorrectToolForDrops());
         createBlock(createBlock, id);
         return createBlock;
     }
